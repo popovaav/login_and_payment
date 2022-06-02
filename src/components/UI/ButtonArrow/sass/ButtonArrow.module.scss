@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}

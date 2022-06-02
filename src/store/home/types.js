@@ -1,0 +1,2 @@
+export const TOGGLE_LOADER = 'TOGGLE_LOADER';
+export const TOGGLE_SCREEN = 'TOGGLE_SCREEN';

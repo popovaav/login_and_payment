@@ -1,0 +1,8 @@
+{
+  "forgotPass" : "Forgot password?",
+  "description" : "No worries, we’ll send you reset instructions.",
+  "enterEmail" : "Enter your email",
+  "email" : "Email",
+  "reset" : "Reset password",
+  "back" : "Back to log in"
+}

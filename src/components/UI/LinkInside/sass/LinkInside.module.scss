@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+  color: #4640DE;;
+  font-size: 14px;
+  @media only screen and(max-width: 375px) {
+    font-size: 13px;
+  }
+}

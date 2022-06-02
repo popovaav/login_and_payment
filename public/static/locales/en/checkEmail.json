@@ -1,0 +1,10 @@
+{
+  "email": "olivia@untitledui.com",
+  "checkEmail" : "Check your email",
+  "openEmail" : "Open email app",
+  "back" : "Back to log in",
+  "didntReceive" : "Didn’t receive the email?",
+  "btnLogin": "btnLogin",
+  "description": "We sent a password reset link to",
+  "clickToResend" : "Click to resend"
+}
