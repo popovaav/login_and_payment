@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t('Vetti')}</title>
+        <title>{t('login')}</title>
         <link rel="icon" href="/vetti.svg" />
       </Head>
       <main className={styles.main}>

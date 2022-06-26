@@ -16,7 +16,8 @@
   button {
     margin-bottom: 16px;
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
   }
 
@@ -77,6 +78,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  svg {
+    rect {margin-top: 5px;
+      border-radius: 4px;
+    }
+  }
 }
 
 .btnFacebook {
@@ -90,5 +97,10 @@
   border-radius: 4px;
   color: white;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.btnTwitter {
+  border-radius: 4px;
 }
 

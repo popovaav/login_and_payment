@@ -4,25 +4,18 @@ import FacebookLogin from 'react-facebook-login';
 import styles from '../sass/LoginForm.module.scss';
 import InputWithTitle from '../../../components/UI/InputWithTitle/InputWithTitle';
 import Button from '../../../components/UI/Button/Button';
+import strings from '../../../constants/strings';
 
 const LoginForm = ({
-  email,
-  password,
-  placeholder,
-  btnGetStarted,
-  title,
-  enterEmail,
-  forgotPass,
-  btnForgotPass,
   toForgotPass,
   handleCallbackResponse,
   responseFacebook
 }) => (
   <div className={styles.container}>
-    <InputWithTitle text={email} placeholder={enterEmail} />
-    <InputWithTitle text={password} placeholder={placeholder} />
-    <Button title={forgotPass} buttonClass={btnForgotPass} handleClick={toForgotPass} />
-    <Button buttonClass={btnGetStarted} title={title} />
+    <InputWithTitle text={strings.email} placeholder={strings.enterEmail} />
+    <InputWithTitle text={strings.password} placeholder={strings.placeholder} />
+    <Button title={strings.forgotPass} buttonClass={strings.btnForgotPass} handleClick={toForgotPass} />
+    <Button buttonClass={strings.btnGetStarted} title={strings.title} />
     <div className={styles.socialLogin}>
       <GoogleLogin
         onSuccess={(credentialResponse) => handleCallbackResponse(credentialResponse)}
@@ -31,7 +24,6 @@ const LoginForm = ({
       />
       <FacebookLogin
         appId="322356903409666"
-        autoLoad
         fields="name,email,picture"
         callback={responseFacebook}
         cssClass={styles.btnFacebook}
@@ -41,35 +33,19 @@ const LoginForm = ({
 );
 
 LoginForm.defaultProps = {
-  email: '',
-  password: '',
-  placeholder: '',
-  btnGetStarted: '',
-  title: '',
-  // src: '',
-  // titleSignIn: '',
-  enterEmail: '',
-  forgotPass: '',
-  btnForgotPass: '',
-  toForgotPass: () => {},
-  handleCallbackResponse: () => {},
-  responseFacebook: () => {}
+  toForgotPass: () => {
+  },
+  handleCallbackResponse: () => {
+  },
+  responseFacebook: () => {
+  }
 };
 
 LoginForm.propTypes = {
-  email: PropTypes.string,
-  password: PropTypes.string,
-  placeholder: PropTypes.string,
-  btnGetStarted: PropTypes.string,
-  title: PropTypes.string,
-  // src: PropTypes.string,
-  // titleSignIn: PropTypes.string,
-  enterEmail: PropTypes.string,
-  forgotPass: PropTypes.string,
-  btnForgotPass: PropTypes.string,
   toForgotPass: PropTypes.func,
   handleCallbackResponse: PropTypes.func,
-  responseFacebook: () => {}
+  responseFacebook: () => {
+  }
 };
 
 export default LoginForm;
